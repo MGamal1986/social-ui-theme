@@ -9,18 +9,6 @@
 /********************************************
 ** Background Images variables
 ********************************************/
-.btn {
-  display: inline-block !important;
-  text-decoration: none !important;
-  padding: 0.25rem .75rem;
-  color: #000;
-  background-color: #fff !important;
-  border-radius: 3px; }
-
-.btn-main {
-  background-color: #1AB6CF !important;
-  color: #fff !important; }
-
 .text-center {
   text-align: center !important; }
 
@@ -54,6 +42,64 @@
 ** Home page mixin
 ** v1.0.0
 ************************************************************/
+.btn {
+  display: inline-block !important;
+  text-decoration: none !important;
+  padding: 0.25rem .75rem;
+  color: #000;
+  background-color: #fff !important;
+  border-radius: 3px; }
+
+.btn-main {
+  background-color: #1AB6CF !important;
+  color: #fff !important; }
+
+.color-select {
+  position: absolute;
+  height: 100vh;
+  z-index: 110;
+  background-color: #484E53;
+  padding: 2rem 1rem;
+  transition: all 0.2s ease-out; }
+  .color-select.hide {
+    transform: translateX(-100%); }
+  .color-select i {
+    position: absolute;
+    color: #fff;
+    background: #484E53;
+    left: 5rem;
+    top: 5rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer; }
+  .color-select .list {
+    left: -100%;
+    list-style: none;
+    color: #fff; }
+    .color-select .list li {
+      padding: 1.25rem 1.5rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      margin-bottom: 1.5rem;
+      cursor: pointer; }
+      .color-select .list li[data-color=color1] {
+        background: #2980b9;
+        border: 1px solid #20638f; }
+      .color-select .list li[data-color=color2] {
+        background: #27ae60;
+        border: 1px solid #1e8449; }
+
+body[data-color=default] nav .navbar {
+  background: rgba(72, 78, 83, 0.7) !important;
+  border-bottom: 1px solid #1AB6CF !important; }
+  body[data-color=default] nav .navbar a {
+    color: #fff; }
+  body[data-color=default] nav .navbar .logo a:hover {
+    color: #1AB6CF; }
+  body[data-color=default] nav .navbar .nav .nav-item .nav-link:hover {
+    color: #1AB6CF; }
+
 nav {
   position: fixed;
   top: 0;
@@ -63,13 +109,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(72, 78, 83, 0.7);
-    border-bottom: 1px solid #1AB6CF;
     padding-top: 1rem;
     padding-bottom: 1rem; }
     nav .navbar a {
-      text-decoration: none;
-      color: #fff; }
+      text-decoration: none; }
     nav .navbar .logo {
       font-size: 1.75rem; }
       nav .navbar .logo a {
@@ -77,8 +120,6 @@ nav {
         nav .navbar .logo a i {
           font-weight: 900;
           margin-right: 5px; }
-        nav .navbar .logo a:hover {
-          color: #1AB6CF; }
     nav .navbar .nav {
       display: flex;
       justify-content: space-evenly;
@@ -90,8 +131,6 @@ nav {
         display: block;
         text-transform: capitalize;
         transition: all 0.2s ease-out; }
-        nav .navbar .nav .nav-item .nav-link:hover {
-          color: #1AB6CF; }
 
 body {
   font-family: 'Raleway';
