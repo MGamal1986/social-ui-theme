@@ -83,12 +83,17 @@
       border-radius: 5px;
       margin-bottom: 1.5rem;
       cursor: pointer; }
+      .color-select .list li[data-color=default] {
+        background: #1AB6CF;
+        border: 1px solid #148ea2; }
       .color-select .list li[data-color=color1] {
         background: #2980b9;
         border: 1px solid #20638f; }
       .color-select .list li[data-color=color2] {
         background: #27ae60;
         border: 1px solid #1e8449; }
+      .color-select .list li.active {
+        border: 1px solid #fff !important; }
 
 body[data-color=default] nav .navbar {
   background: rgba(72, 78, 83, 0.7) !important;
@@ -99,6 +104,26 @@ body[data-color=default] nav .navbar {
     color: #1AB6CF; }
   body[data-color=default] nav .navbar .nav .nav-item .nav-link:hover {
     color: #1AB6CF; }
+
+body[data-color=color1] nav .navbar {
+  background: rgba(72, 78, 83, 0.7) !important;
+  border-bottom: 1px solid #2980b9 !important; }
+  body[data-color=color1] nav .navbar a {
+    color: #fff; }
+  body[data-color=color1] nav .navbar .logo a:hover {
+    color: #2980b9; }
+  body[data-color=color1] nav .navbar .nav .nav-item .nav-link:hover {
+    color: #2980b9; }
+
+body[data-color=color2] nav .navbar {
+  background: rgba(72, 78, 83, 0.7) !important;
+  border-bottom: 1px solid #27ae60 !important; }
+  body[data-color=color2] nav .navbar a {
+    color: #fff; }
+  body[data-color=color2] nav .navbar .logo a:hover {
+    color: #27ae60; }
+  body[data-color=color2] nav .navbar .nav .nav-item .nav-link:hover {
+    color: #27ae60; }
 
 nav {
   position: fixed;
@@ -170,6 +195,12 @@ body {
       body .home-content a:nth-of-type(2):hover {
         background-color: #60686e !important;
         color: #fff !important; }
+
+body[data-color=color1] .home-content a.btn-main {
+  background: #2980b9 !important; }
+
+body[data-color=color2] .home-content a.btn-main {
+  background: #27ae60 !important; }
 
 @media screen and (max-width: 768px) {
   nav .navbar {

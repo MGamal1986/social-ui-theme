@@ -11,6 +11,13 @@ let colors = document.querySelectorAll('.color-select li');
 colors.forEach(color => {
   color.addEventListener('click', event => {
     body.dataset.color = event.target.dataset.color;
-    console.log(body);
+    let listItems = event.target.parentElement.children; // loop throgth all list items and remove active class
+
+    for (item of listItems) {
+      item.classList.remove('active');
+    } // add active class to clicked item
+
+
+    event.target.classList.add('active');
   });
 });
