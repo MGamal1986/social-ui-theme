@@ -1,7 +1,8 @@
 *, *:after, *:before {
   padding: 0;
   margin: 0;
-  box-sizing: border-box; }
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 /********************************************
 ** Color variables
@@ -60,9 +61,11 @@
   z-index: 110;
   background-color: #484E53;
   padding: 2rem 1rem;
+  -webkit-transition: all 0.2s ease-out;
   transition: all 0.2s ease-out; }
   .color-select.hide {
-    transform: translateX(-100%); }
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%); }
   .color-select i {
     position: absolute;
     color: #fff;
@@ -131,9 +134,15 @@ nav {
   z-index: 100;
   width: 100%; }
   nav .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     padding-top: 1rem;
     padding-bottom: 1rem; }
     nav .navbar a {
@@ -141,20 +150,28 @@ nav {
     nav .navbar .logo {
       font-size: 1.75rem; }
       nav .navbar .logo a {
+        -webkit-transition: all 0.2s ease-out;
         transition: all 0.2s ease-out; }
         nav .navbar .logo a i {
           font-weight: 900;
           margin-right: 5px; }
     nav .navbar .nav {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      justify-content: space-evenly;
-      align-items: center;
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       list-style: none; }
       nav .navbar .nav .nav-item .nav-link {
         padding: 0 1rem;
         font-size: 1.25rem;
         display: block;
         text-transform: capitalize;
+        -webkit-transition: all 0.2s ease-out;
         transition: all 0.2s ease-out; }
 
 body {
@@ -187,6 +204,7 @@ body {
     body .home-content a {
       padding: 0.75rem 1.5rem !important;
       margin-right: 0.25rem;
+      -webkit-transition: all 0.2s ease-out;
       transition: all 0.2s ease-out; }
       body .home-content a.btn-main {
         opacity: 0.8; }
@@ -210,7 +228,9 @@ body[data-color=color2] .home-content a.btn-main {
       margin-bottom: 15px;
       font-size: 1.5rem; }
     nav .navbar .nav {
-      justify-content: space-evenly; }
+      -webkit-box-pack: space-evenly;
+          -ms-flex-pack: space-evenly;
+              justify-content: space-evenly; }
       nav .navbar .nav .nav-link {
         font-size: 1rem; }
   .home-content {
