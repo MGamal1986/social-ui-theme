@@ -21,3 +21,8 @@ sel.addEventListener('click', function (e) {
         event.target.classList.add('active');
     })
  })
+ body.addEventListener('click',(event)=>{
+  if(!event.target.classList.contains('color-select')  && !event.target.classList.contains('color-item') && !event.target.classList.contains('fa-cog')){
+    aside.classList.add('hide');
+  }
+ });
