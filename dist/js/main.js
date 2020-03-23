@@ -1,5 +1,6 @@
 // select color button event
 let sel = document.querySelector('.color-select i');
+let listItems = document.querySelectorAll('.color-select li');
 let aside = document.querySelector('.color-select');
 let homePage = document.querySelector('#home');
 let body = document.body;
@@ -8,11 +9,35 @@ sel.addEventListener('click', function (e) {
 });
 
 // add color change event
+// localStorage.removeItem('color-select');
+let colStorage = localStorage['color-select'];
+if(colStorage){
+  if(colStorage === '#1AB6CF'){
+    body.dataset.color = 'default';
+    listItems[0].classList.add('active');
+  }else if(colStorage === '#2980b9'){
+    body.dataset.color = 'color1';
+    listItems[1].classList.add('active');
+  }else if(colStorage === '#27ae60'){
+    body.dataset.color = 'color2';
+    listItems[2].classList.add('active');
+  }
+}
  let colors = document.querySelectorAll('.color-select li');
  colors.forEach((color)=>{
     color.addEventListener('click',(event)=>{
-        body.dataset.color = event.target.dataset.color;
-        let listItems = event.target.parentElement.children;
+        // store col attribute of clicked item
+        let col = event.target.dataset.col;
+        // save color selection in localstorage
+        localStorage.setItem('color-select' , col);
+        if(col === '#1AB6CF'){
+          body.dataset.color = 'default';
+        }else if(col === '#2980b9'){
+          body.dataset.color = 'color1';
+        }else if(col === '#27ae60'){
+          body.dataset.color = 'color2';
+        }
+        
         // loop throgth all list items and remove active class
         for(item of listItems){
           item.classList.remove('active');
@@ -21,6 +46,7 @@ sel.addEventListener('click', function (e) {
         event.target.classList.add('active');
     })
  })
+//  add click event to body to close color selector feature
  body.addEventListener('click',(event)=>{
   if(!event.target.classList.contains('color-select')  && !event.target.classList.contains('color-item') && !event.target.classList.contains('fa-cog')){
     aside.classList.add('hide');
