@@ -176,13 +176,13 @@ nav {
 
 body {
   font-family: 'Raleway';
-  height: 1500px; }
+  height: 1500px;
+  position: relative; }
   body#home {
     height: 100vh;
     background: url("../img/showcase.jpg") no-repeat;
     background-size: cover;
-    background-position: center center;
-    position: relative; }
+    background-position: center center; }
     body#home:after {
       content: '';
       position: absolute;
@@ -238,4 +238,6 @@ body[data-color=color2] .home-content a.btn-main {
     .home-content h1 {
       font-size: 2rem !important; }
     .home-content h3 {
-      font-size: 1rem !important; } }
+      font-size: 1rem !important; }
+  .color-select i {
+    top: 7rem !important; } }
