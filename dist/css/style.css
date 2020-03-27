@@ -330,6 +330,8 @@ body {
       padding: 0.5rem 1.5rem; }
       body .signup .content button:hover {
         background: #36cee6 !important; }
+    body .signup .content span {
+      font-size: 0.85rem; }
     body .signup .content p {
       color: #444;
       margin-right: 0.25rem;
@@ -421,4 +423,14 @@ body[data-color=color2] .signup .content a {
   .login p {
     font-size: 1rem; }
   .login a {
+    font-size: 1rem; }
+  .signup h1 {
+    font-size: 2rem !important; }
+  .signup h3 i {
+    font-size: 1.25rem; }
+  .signup h3 span {
+    font-size: 1.25rem; }
+  .signup p {
+    font-size: 1rem; }
+  .signup a {
     font-size: 1rem; } }
