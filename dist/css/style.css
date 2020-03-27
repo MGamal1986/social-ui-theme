@@ -69,8 +69,8 @@
 .mb-5 {
   margin-bottom: 5rem; }
 
-.vh100 {
-  height: 100vh !important; }
+.secColor {
+  color: #7f8c8d !important; }
 
 /*******************************************************
 ** This mixins used for media query
@@ -104,24 +104,31 @@
 
 .form-control {
   width: 100% !important;
-  padding: 0.75rem 0.5rem;
-  font-size: 1.25rem;
-  color: #666; }
+  padding: 0.45rem 0.5rem;
+  font-size: 1.1rem;
+  color: #666;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.2); }
   .form-control::-webkit-input-placeholder {
-    font-size: 1.25rem;
-    text-transform: capitalize; }
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #2d3436; }
   .form-control::-moz-placeholder {
-    font-size: 1.25rem;
-    text-transform: capitalize; }
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #2d3436; }
   .form-control:-ms-input-placeholder {
-    font-size: 1.25rem;
-    text-transform: capitalize; }
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #2d3436; }
   .form-control::-ms-input-placeholder {
-    font-size: 1.25rem;
-    text-transform: capitalize; }
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #2d3436; }
   .form-control::placeholder {
-    font-size: 1.25rem;
-    text-transform: capitalize; }
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    color: #2d3436; }
 
 .color-select {
   position: fixed;
@@ -280,7 +287,8 @@ body {
   body .login {
     padding-top: 9.5rem; }
     body .login .content h1 {
-      color: #1AB6CF; }
+      color: #1AB6CF;
+      font-weight: 500 !important; }
     body .login .content h3 {
       color: #444;
       font-weight: normal; }
@@ -304,6 +312,34 @@ body {
       font-size: 1.25rem; }
       body .login .content a:hover {
         color: #1AB6CF; }
+  body .signup {
+    padding-top: 9.5rem; }
+    body .signup .content h1 {
+      color: #1AB6CF;
+      font-weight: 500 !important; }
+    body .signup .content h3 {
+      color: #444;
+      font-weight: normal; }
+      body .signup .content h3 i {
+        margin-right: 0.5rem;
+        font-size: 1.5rem; }
+      body .signup .content h3 span {
+        font-size: 1.6rem; }
+    body .signup .content button {
+      font-size: 1.25rem;
+      padding: 0.5rem 1.5rem; }
+      body .signup .content button:hover {
+        background: #36cee6 !important; }
+    body .signup .content p {
+      color: #444;
+      margin-right: 0.25rem;
+      font-size: 1.25rem; }
+    body .signup .content a {
+      text-decoration: none;
+      color: #1AB6CF;
+      font-size: 1.25rem; }
+      body .signup .content a:hover {
+        color: #1AB6CF; }
 
 body[data-color=color1] .home-content a.btn-main {
   background: #e84118 !important; }
@@ -319,6 +355,17 @@ body[data-color=color1] .login .content button {
 body[data-color=color1] .login .content a {
   color: #e84118 !important; }
 
+body[data-color=color1] .signup .content h1 {
+  color: #e84118; }
+
+body[data-color=color1] .signup .content button {
+  background: #e84118 !important; }
+  body[data-color=color1] .signup .content button:hover {
+    background: #ed6746 !important; }
+
+body[data-color=color1] .signup .content a {
+  color: #e84118 !important; }
+
 body[data-color=color2] .home-content a.btn-main {
   background: #27ae60 !important; }
 
@@ -331,6 +378,17 @@ body[data-color=color2] .login .content button {
     background: #36d278 !important; }
 
 body[data-color=color2] .login .content a {
+  color: #27ae60 !important; }
+
+body[data-color=color2] .signup .content h1 {
+  color: #27ae60; }
+
+body[data-color=color2] .signup .content button {
+  background: #27ae60 !important; }
+  body[data-color=color2] .signup .content button:hover {
+    background: #36d278 !important; }
+
+body[data-color=color2] .signup .content a {
   color: #27ae60 !important; }
 
 @media screen and (max-width: 768px) {

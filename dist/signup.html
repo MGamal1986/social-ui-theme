@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
-    <title>Welcome to DevConnector</title>
 </head>
-<body id="home" data-color="default" class="vh100">
+<body id="signup" data-color="default">
     <!-- Start color select -->
     <aside class="color-select text-center hide">
         <i class="fas fa-cog fa-2x"></i>
@@ -43,20 +43,38 @@
     </nav>
     <!-- end navbr section -->
 
-    <!-- start home page content -->
-    <div class="home-content text-center">
+    <!-- start sign up content -->
+    <div class="signup">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <h1 class="display-4 text-capitalize">Developer Connector</h1>
-                    <h3 class="text-capitalize">Create developer profile/portfolio, share posts and get help from other developers</h3>
-                    <a href="signup.html" class="btn btn-main text-capitalize">sign up</a>
-                    <a href="login.html" class="btn text-capitalize">login</a>
+                <div class="col-11 m-auto">
+                    <div class="content">
+                        <h1 class="text-capitalize display-2 mb-4">sign up</h1>
+                        <h3 class="text-capitalize mb-4">
+                            <i class="fas fa-user"></i>
+                            <span>create your account</span>
+                        </h3>
+                        <div class="form-group mb-4">
+                            <input type="text" class="form-control" placeholder="name">
+                        </div>
+                        <div class="form-group mb-2">
+                            <input type="email" class="form-control" placeholder="email address">
+                        </div>
+                        <span class="mb-4 d-block secColor">This site uses Gravatar, so if you want a profile image, use a Gravatar email </span>
+                        <div class="form-group mb-4">
+                            <input type="password" class="form-control" placeholder="password">
+                        </div>
+                        <div class="form-group mb-4">
+                            <input type="password" class="form-control" placeholder="confirm password">
+                        </div>
+                        <button class="btn btn-main mb-4 text-capitalize">register</button>
+                        <br>
+                        <p class="text-capitalize d-inline">already have an account</p><a href="login.html" class="text-capitalize">sign in</a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- end home page content -->
-    
+    <!-- End sign up content -->
 </body>
 </html>
