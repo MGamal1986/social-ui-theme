@@ -24,6 +24,8 @@ if (colStorage) {
     body.dataset.color = 'color2';
     listItems[2].classList.add('active');
   }
+} else {
+  listItems[0].classList.add('active');
 }
 
 var colors = document.querySelectorAll('.color-select li');
