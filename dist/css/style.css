@@ -79,6 +79,9 @@
 /*********************************************************
 ** mixin for transition
 **********************************************************/
+/*********************************************************
+** mixin for padding
+**********************************************************/
 /***********************************************************
 ** Background image mixin
 ** v1.0.0
@@ -342,6 +345,34 @@ body {
       font-size: 1.25rem; }
       body .signup .content a:hover {
         color: #1AB6CF; }
+  body .dashboard {
+    padding-top: 6.5rem; }
+    body .dashboard h1 {
+      color: #1AB6CF;
+      font-weight: 500 !important; }
+    body .dashboard h3 {
+      color: #444;
+      font-weight: normal; }
+      body .dashboard h3 i {
+        margin-right: 0.5rem;
+        font-size: 1.5rem; }
+      body .dashboard h3 span {
+        font-size: 1.6rem;
+        margin-right: .25rem; }
+    body .dashboard .profile a {
+      margin-right: 0.5rem;
+      padding: 0.7rem 2rem;
+      border-radius: 0px !important;
+      background-color: #F4F4F4 !important;
+      color: #444 !important;
+      position: relative; }
+      body .dashboard .profile a > i {
+        position: absolute;
+        display: inline-block;
+        top: 9px;
+        left: 6px;
+        font-size: 1.25rem;
+        color: #1AB6CF; }
 
 body[data-color=color1] .home-content a.btn-main {
   background: #e84118 !important; }
@@ -433,4 +464,9 @@ body[data-color=color2] .signup .content a {
   .signup p {
     font-size: 1rem; }
   .signup a {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+  .dashboard .profile {
+    display: block !important; }
+    .dashboard .profile a {
+      display: block !important;
+      margin-bottom: .75rem; } }
