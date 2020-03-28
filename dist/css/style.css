@@ -256,7 +256,8 @@ body {
   body#home {
     background: url("../img/showcase.jpg") no-repeat;
     background-size: cover;
-    background-position: center center; }
+    background-position: center center;
+    height: 100vh; }
     body#home:after {
       content: '';
       position: absolute;
@@ -365,7 +366,12 @@ body {
       border-radius: 0px !important;
       background-color: #F4F4F4 !important;
       color: #444 !important;
-      position: relative; }
+      position: relative;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+      body .dashboard .profile a:hover {
+        background: #484E53 !important;
+        color: #fff !important; }
       body .dashboard .profile a > i {
         position: absolute;
         display: inline-block;
@@ -469,4 +475,4 @@ body[data-color=color2] .signup .content a {
     display: block !important; }
     .dashboard .profile a {
       display: block !important;
-      margin-bottom: .75rem; } }
+      margin-bottom: .3rem; } }
