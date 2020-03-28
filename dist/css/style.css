@@ -10,6 +10,28 @@
 /********************************************
 ** Background Images variables
 ********************************************/
+/*******************************************************
+** This mixins used for media query
+**
+********************************************************/
+/*********************************************************
+** mixin for transition
+**********************************************************/
+/*********************************************************
+** mixin for padding
+**********************************************************/
+/***********************************************************
+** Background image mixin
+** v1.0.0
+************************************************************/
+/***********************************************************
+** Home page mixin
+** v1.0.0
+************************************************************/
+/***********************************************************
+** links and button hover effect
+** v1.0.0
+************************************************************/
 .text-center {
   text-align: center !important; }
 
@@ -52,44 +74,64 @@
   margin: auto !important; }
 
 .mb-0 {
-  margin-bottom: 0rem; }
+  margin-bottom: 0rem !important; }
 
 .mb-1 {
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem !important; }
 
 .mb-2 {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem !important; }
 
 .mb-3 {
-  margin-bottom: 3rem; }
+  margin-bottom: 3rem !important; }
 
 .mb-4 {
-  margin-bottom: 4rem; }
+  margin-bottom: 4rem !important; }
 
 .mb-5 {
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem !important; }
+
+.mb-6 {
+  margin-bottom: 6rem !important; }
+
+.mb-7 {
+  margin-bottom: 7rem !important; }
+
+.mb-8 {
+  margin-bottom: 8rem !important; }
+
+.mb-9 {
+  margin-bottom: 9rem !important; }
+
+.mb-10 {
+  margin-bottom: 10rem !important; }
 
 .secColor {
   color: #7f8c8d !important; }
 
-/*******************************************************
-** This mixins used for media query
-**
-********************************************************/
-/*********************************************************
-** mixin for transition
-**********************************************************/
-/*********************************************************
-** mixin for padding
-**********************************************************/
 /***********************************************************
-** Background image mixin
-** v1.0.0
+* Classes in media query
 ************************************************************/
-/***********************************************************
-** Home page mixin
-** v1.0.0
-************************************************************/
+@media screen and (min-width: 1200px) {
+  .d-sm-none {
+    display: table-cell !important; } }
+
+@media screen and (max-width: 1199px) {
+  .d-sm-none {
+    display: table-cell !important; } }
+
+@media screen and (max-width: 992px) {
+  .d-sm-none {
+    display: table-cell !important; } }
+
+@media screen and (max-width: 768px) {
+  .d-sm-none {
+    display: none !important; } }
+
+@media screen and (max-width: 500px) {
+  .d-sm-none {
+    display: none !important; } }
+
 .btn {
   display: inline-block !important;
   text-decoration: none !important;
@@ -104,6 +146,11 @@
 .btn-main {
   background-color: #1AB6CF !important;
   color: #fff !important; }
+
+.btn-danger {
+  background-color: #E04B59 !important;
+  color: #fff !important;
+  border-radius: 0; }
 
 .form-control {
   width: 100% !important;
@@ -280,11 +327,10 @@ body {
       padding: 0.75rem 1.5rem !important;
       margin-right: 0.25rem;
       -webkit-transition: all 0.2s ease-out;
-      transition: all 0.2s ease-out; }
-      body .home-content a.btn-main {
-        opacity: 0.8; }
-        body .home-content a.btn-main:hover {
-          opacity: 1; }
+      transition: all 0.2s ease-out;
+      opacity: 0.9; }
+      body .home-content a:hover {
+        opacity: 1; }
       body .home-content a:nth-of-type(2):hover {
         background-color: #60686e !important;
         color: #fff !important; }
@@ -347,7 +393,7 @@ body {
       body .signup .content a:hover {
         color: #1AB6CF; }
   body .dashboard {
-    padding-top: 6.5rem; }
+    padding: 6.5rem 0; }
     body .dashboard h1 {
       color: #1AB6CF;
       font-weight: 500 !important; }
@@ -379,6 +425,23 @@ body {
         left: 6px;
         font-size: 1.25rem;
         color: #1AB6CF; }
+    body .dashboard table th, body .dashboard table td {
+      padding: 1.25rem; }
+    body .dashboard table th {
+      background-color: #F4F4F4;
+      font-weight: 500; }
+    body .dashboard table a {
+      padding: 0.4rem 1rem !important;
+      opacity: 0.9; }
+      body .dashboard table a:hover {
+        opacity: 1; }
+    body .dashboard .exp h3, body .dashboard .edu h3 {
+      font-weight: 500; }
+    body .dashboard .delete a {
+      padding: 0.4rem 1rem !important;
+      opacity: 0.9; }
+      body .dashboard .delete a:hover {
+        opacity: 1; }
 
 body[data-color=color1] .home-content a.btn-main {
   background: #e84118 !important; }
@@ -405,6 +468,12 @@ body[data-color=color1] .signup .content button {
 body[data-color=color1] .signup .content a {
   color: #e84118 !important; }
 
+body[data-color=color1] .dashboard h1 {
+  color: #e84118; }
+
+body[data-color=color1] .dashboard .profile a > i {
+  color: #e84118; }
+
 body[data-color=color2] .home-content a.btn-main {
   background: #27ae60 !important; }
 
@@ -430,19 +499,27 @@ body[data-color=color2] .signup .content button {
 body[data-color=color2] .signup .content a {
   color: #27ae60 !important; }
 
+body[data-color=color2] .dashboard h1 {
+  color: #27ae60; }
+
+body[data-color=color2] .dashboard .profile a > i {
+  color: #27ae60; }
+
 @media screen and (max-width: 768px) {
   nav .navbar {
     display: block;
-    text-align: center; }
+    text-align: center;
+    padding: 0.8rem 0 !important; }
     nav .navbar .logo {
       margin-bottom: 15px;
       font-size: 1.5rem; }
     nav .navbar .nav {
-      -webkit-box-pack: space-evenly;
-          -ms-flex-pack: space-evenly;
-              justify-content: space-evenly; }
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
       nav .navbar .nav .nav-link {
-        font-size: 1rem; }
+        font-size: 1rem !important;
+        padding: 0 0.5rem !important; }
   .home-content {
     padding-top: 35vh !important; }
     .home-content h1 {
@@ -471,8 +548,22 @@ body[data-color=color2] .signup .content a {
     font-size: 1rem; }
   .signup a {
     font-size: 1rem; }
-  .dashboard .profile {
-    display: block !important; }
-    .dashboard .profile a {
-      display: block !important;
-      margin-bottom: .3rem; } }
+  .dashboard {
+    padding: 9.5rem 0 !important; }
+    .dashboard h1 {
+      font-size: 2rem !important; }
+    .dashboard h3 i {
+      font-size: 1.25rem !important; }
+    .dashboard h3 span {
+      font-size: 1.25rem !important; }
+    .dashboard .profile {
+      display: block !important; }
+      .dashboard .profile a {
+        display: block !important;
+        margin-bottom: .3rem; }
+    .dashboard .exp, .dashboard .edu {
+      text-align: center; }
+      .dashboard .exp table, .dashboard .edu table {
+        margin: auto; }
+    .dashboard .delete {
+      text-align: center; } }
