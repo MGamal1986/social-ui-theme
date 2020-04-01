@@ -56,17 +56,56 @@
             </h3>
             <span class="mb-1 d-block">* = required fields</span>
             <!-- profile fields input section -->
-            <div class="field-input">
-                <select name="job-list" class="form-control">
-                    <option value="">select status professional</option>
-                    <option value="developer">developer</option>
-                    <option value="developer">developer</option>
-                    <option value="developer">developer</option>
-                </select>
-                <p class="text-capitalize mb-1">Give us an idea of where you are at in your career</p>
-                <input type="text" placeholder="company" class="form-control">
-                <p class="text-capitalize mb-1">Could be your own company or one you work for</p>
-            </div>
+            <form action="">
+                <div class="field-input">
+                    <select name="job-list" class="form-control">
+                        <option value="">select status professional</option>
+                        <option value="developer">developer</option>
+                        <option value="developer">developer</option>
+                        <option value="developer">developer</option>
+                    </select>
+                    <p class="text-capitalize mb-1">Give us an idea of where you are at in your career</p>
+                    <input name="company" type="text" placeholder="company" class="form-control">
+                    <p class="text-capitalize mb-1">Could be your own company or one you work for</p>
+                    <input name="website"  type="text" placeholder="website" class="form-control">
+                    <p class="text-capitalize mb-1">Could be your own or a company website</p>
+                    <input name="location"  type="text" placeholder="location" class="form-control">
+                    <p class="text-capitalize mb-1">City & state suggested (eg. Boston, MA)</p>
+                    <input name="skills"  type="text" placeholder="* skills" class="form-control">
+                    <p class="text-capitalize mb-1">Please use comma separated values (eg. HTML,CSS,JavaScript,PHP)</p>
+                    <input name="github"  type="text" placeholder="Github" class="form-control">
+                    <p class="text-capitalize mb-1">If you want your latest repos and a Github link, include your username</p>
+                    <textarea rows="2" name="bio-info" class="form-control" placeholder="a short bio for yourself" maxlength="250"></textarea>
+                    <p class="text-capitalize mb-1">Tell us a little about yourself</p>
+                </div>
+                <!-- social field inputs -->
+                <div class="social-input">
+                    <a href="#" class="btn btn-ligth text-capitalize mb-1 mt-2">add social network links</a>
+                    <div class="form-group mb-1">
+                        <i class="fab fa-facebook-square mr-1"></i>
+                        <input type="text" name="facebook" placeholder="facebook" class="form-control">
+                    </div>
+                    <div class="form-group mb-1">
+                        <i class="fab fa-twitter mr-1"></i>
+                        <input type="text" name="twitter" placeholder="twitter" class="form-control">
+                    </div>
+                    <div class="form-group mb-1">
+                        <i class="fab fa-youtube mr-1"></i>
+                        <input type="text" name="youtube" placeholder="youtube" class="form-control">
+                    </div>
+                    <div class="form-group mb-1">
+                        <i class="fab fa-facebook-square mr-1"></i>
+                        <input type="text" name="facebook" placeholder="facebook" class="form-control">
+                    </div>
+                    <div class="form-group mb-1">
+                        <i class="fab fa-facebook-square mr-1"></i>
+                        <input type="text" name="facebook" placeholder="facebook" class="form-control">
+                    </div>
+                </div>
+                <!-- submit query -->
+                 <input type="submit" class="btn btn-main btn-2x" value="submit">
+            </form>            
+            
         </div>
     </div>
     <!-- ebd edit profile section -->
