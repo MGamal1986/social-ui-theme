@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+    <title>Welcome to DevCOnnector</title>
+</head>
+<body id="editPrfile" data-color="default">
+    <!-- Start color select -->
+    <aside class="color-select text-center hide">
+        <i class="fas fa-cog fa-2x"></i>
+        <ul class="list text-capitalize">
+            <li class="color-item" data-color='default' data-col="#1AB6CF"></li>
+            <li class="color-item" data-color='color1' data-col="#2980b9"></li>
+            <li class="color-item" data-color='color2' data-col="#27ae60"></li>
+        </ul>
+    </aside>
+    <!-- End color select -->
+
+    <!-- start navbar section -->
+    <nav>
+        <div class="container-fluid navbar">
+            <div class="logo">
+                <a href="dashboard.html"><i class="fas fa-code"></i><span>Dev</span><span>Connector</span></a>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link">developer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">posts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link"><i class="fas fa-user"></i>dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link"><i class="fas fa-sign-out-alt"></i>logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end navbr section -->
+
+    <!-- start edit profile section -->
+    <div class="edit-profile">
+        <div class="container">
+            <h1 class="text-capitalize display-2 mb-2">create your profile</h1>
+            <h3 class="text-capitalize mb-1">
+                <i class="fas fa-user"></i>
+                <span class="text-capitalize"> Let's get some information to make your profile stand out</span>
+            </h3>
+            <span class="mb-1 d-block">* = required fields</span>
+            <!-- profile fields input section -->
+            <div class="field-input">
+                <select name="job-list" class="form-control">
+                    <option value="">select status professional</option>
+                    <option value="developer">developer</option>
+                    <option value="developer">developer</option>
+                    <option value="developer">developer</option>
+                </select>
+                <p class="text-capitalize mb-1">Give us an idea of where you are at in your career</p>
+                <input type="text" placeholder="company" class="form-control">
+                <p class="text-capitalize mb-1">Could be your own company or one you work for</p>
+            </div>
+        </div>
+    </div>
+    <!-- ebd edit profile section -->
+</body>
+</html>
