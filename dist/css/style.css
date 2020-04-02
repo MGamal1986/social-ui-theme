@@ -295,7 +295,10 @@
 .form-group {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
 
 .color-select {
   position: fixed;
@@ -347,8 +350,12 @@ body nav .navbar {
     color: #fff; }
   body nav .navbar .logo a:hover {
     color: #1AB6CF; }
-  body nav .navbar .nav .nav-item .nav-link:hover {
-    color: #1AB6CF; }
+  body nav .navbar .nav .nav-item .nav-link {
+    font-size: 1rem; }
+    body nav .navbar .nav .nav-item .nav-link i {
+      margin-right: 0.25rem; }
+    body nav .navbar .nav .nav-item .nav-link:hover {
+      color: #1AB6CF; }
 
 body[data-color=color1] nav .navbar {
   border-bottom: 1px solid #e84118 !important; }
@@ -577,23 +584,37 @@ body {
       color: #7f8c8d;
       font-size: 0.8rem;
       margin-top: .3rem; }
-    body .edit-profile .social-input a {
+    body .edit-profile .social-input a:nth-of-type(1) {
       padding: 0.5rem 1rem;
       border-radius: 0;
       -webkit-transition: all 0.2s ease-out;
       transition: all 0.2s ease-out; }
-      body .edit-profile .social-input a:hover {
+      body .edit-profile .social-input a:nth-of-type(1):hover {
         background: #7f8c8d !important;
         color: #fff !important; }
     body .edit-profile .social-input i {
       font-size: 2rem;
-      padding: 0.45rem; }
+      padding: 0.45rem;
+      width: 4rem; }
       body .edit-profile .social-input i.fa-facebook-square {
         color: #3b5998; }
       body .edit-profile .social-input i.fa-twitter {
         color: #1da1f2; }
       body .edit-profile .social-input i.fa-youtube {
         color: #ff0000; }
+    body .edit-profile .submit input, body .edit-profile .submit a {
+      padding: 0.45rem 2rem;
+      border-radius: 0;
+      font-size: 1.25rem;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    body .edit-profile .submit input {
+      opacity: 0.8; }
+      body .edit-profile .submit input:hover {
+        opacity: 1; }
+    body .edit-profile .submit a:hover {
+      background: #7f8c8d !important;
+      color: #fff !important; }
 
 body[data-color=color1] .home-content a.btn-main {
   background: #e84118 !important; }
@@ -626,6 +647,12 @@ body[data-color=color1] .dashboard h1 {
 body[data-color=color1] .dashboard .profile a > i {
   color: #e84118; }
 
+body[data-color=color1] .edit-profile h1 {
+  color: #e84118; }
+
+body[data-color=color1] .edit-profile .submit input {
+  background: #e84118 !important; }
+
 body[data-color=color2] .home-content a.btn-main {
   background: #27ae60 !important; }
 
@@ -656,6 +683,12 @@ body[data-color=color2] .dashboard h1 {
 
 body[data-color=color2] .dashboard .profile a > i {
   color: #27ae60; }
+
+body[data-color=color2] .edit-profile h1 {
+  color: #27ae60; }
+
+body[data-color=color2] .edit-profile .submit input {
+  background: #27ae60 !important; }
 
 @media screen and (max-width: 768px) {
   nav .navbar {
@@ -718,4 +751,12 @@ body[data-color=color2] .dashboard .profile a > i {
       .dashboard .exp table, .dashboard .edu table {
         margin: auto; }
     .dashboard .delete {
-      text-align: center; } }
+      text-align: center; }
+  .edit-profile {
+    padding: 9.5rem 0 !important; }
+    .edit-profile h1 {
+      font-size: 2rem !important; }
+    .edit-profile h3 i {
+      font-size: 1.25rem !important; }
+    .edit-profile h3 span {
+      font-size: 1.25rem !important; } }
