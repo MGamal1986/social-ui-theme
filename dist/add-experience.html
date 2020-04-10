@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+    <title>Welcome to DevCOnnector</title>
+</head>
+<body id="addexperience" data-color="default">
+    <!-- Start color select -->
+    <aside class="color-select text-center hide">
+        <i class="fas fa-cog fa-2x"></i>
+        <ul class="list text-capitalize">
+            <li class="color-item" data-color='default' data-col="#1AB6CF"></li>
+            <li class="color-item" data-color='color1' data-col="#2980b9"></li>
+            <li class="color-item" data-color='color2' data-col="#27ae60"></li>
+        </ul>
+    </aside>
+    <!-- End color select -->
+
+    <!-- start navbar section -->
+    <nav>
+        <div class="container-fluid navbar">
+            <div class="logo">
+                <a href="dashboard.html"><i class="fas fa-code"></i><span>Dev</span><span>Connector</span></a>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="" class="nav-link">developer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="" class="nav-link">posts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link"><i class="fas fa-user"></i>dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link"><i class="fas fa-sign-out-alt"></i>logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end navbr section -->
+
+    <div class="experience">
+        <div class="container">
+            <h1 class="text-capitalize display-2 mb-2">Add An Experience</h1>
+            <h3 class="text-capitalize mb-1">
+                <i class="fas fa-code-branch"></i>
+                <span class="text-capitalize"> Add any developer/programming positions that you have had in the past </span>
+            </h3>
+            <span class="mb-1 d-block">* = required fields</span>
+            <!-- experince fields input section -->
+            <form action="">
+                <div class="field-input">
+                    <input name="company" type="text" placeholder="* job title" class="form-control mb-2">
+                    
+                    <input name="website"  type="text" placeholder="* company" class="form-control mb-2">
+                    
+                    <input name="location"  type="text" placeholder="location" class="form-control mb-2">
+                    <span class="date">form date</span>
+
+                    <input name="skills"  type="date" placeholder="from date" class="form-control mb-2">
+                    <span class="date">to date</span>
+
+                    <input name="github"  type="date" placeholder="to date" class="form-control mb-2">
+                    
+                    <input type="checkbox" name="current-job" class="mb-2">
+                    <span class="job">current job</span>
+
+                    <textarea rows="10" name="bio-info" class="form-control mb-2" placeholder="job description" maxlength="250"></textarea>
+                    
+                </div>
+                <!-- submit query -->
+                <div class="submit">
+                    <input type="submit" class="btn btn-main mr-1 text-capitalize" value="submit">
+                    <a href="dashboard.html" class="btn btn-ligth text-capitalize">go back</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
