@@ -708,8 +708,12 @@ body {
     body .developers .developer {
       background: #F4F4F4;
       border: 1px solid #777;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); }
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      @media (max-width: 768px) {
+        body .developers .developer {
+          display: block; } }
 
 body[data-color=color1] .home-content a.btn-main {
   background: #e84118 !important; }
