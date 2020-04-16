@@ -657,6 +657,40 @@ body {
     body .experience .submit a:hover {
       background: #7f8c8d !important;
       color: #fff !important; }
+  body .education {
+    padding: 6.5rem 0; }
+    body .education h1 {
+      color: #1AB6CF;
+      font-weight: 500 !important; }
+    body .education h3 {
+      color: #444;
+      font-weight: normal; }
+      body .education h3 i {
+        margin-right: 0.5rem;
+        font-size: 1.5rem; }
+      body .education h3 span {
+        font-size: 1.6rem;
+        margin-right: .25rem; }
+    body .education .field-input > span.date {
+      text-transform: capitalize;
+      font-size: 1.25rem;
+      display: inline-block;
+      margin-bottom: 0.25rem; }
+    body .education .field-input .job {
+      text-transform: capitalize; }
+    body .education .submit input, body .education .submit a {
+      padding: 0.45rem 2rem;
+      border-radius: 0;
+      font-size: 1.25rem;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    body .education .submit input {
+      opacity: 0.8; }
+      body .education .submit input:hover {
+        opacity: 1; }
+    body .education .submit a:hover {
+      background: #7f8c8d !important;
+      color: #fff !important; }
 
 body[data-color=color1] .home-content a.btn-main {
   background: #e84118 !important; }
@@ -701,6 +735,12 @@ body[data-color=color1] .experience h1 {
 body[data-color=color1] .experience .submit input {
   background: #e84118 !important; }
 
+body[data-color=color1] .education h1 {
+  color: #e84118; }
+
+body[data-color=color1] .education .submit input {
+  background: #e84118 !important; }
+
 body[data-color=color2] .home-content a.btn-main {
   background: #27ae60 !important; }
 
@@ -742,6 +782,12 @@ body[data-color=color2] .experience h1 {
   color: #27ae60; }
 
 body[data-color=color2] .experience .submit input {
+  background: #27ae60 !important; }
+
+body[data-color=color2] .education h1 {
+  color: #27ae60; }
+
+body[data-color=color2] .education .submit input {
   background: #27ae60 !important; }
 
 @media screen and (max-width: 768px) {
@@ -821,4 +867,12 @@ body[data-color=color2] .experience .submit input {
     .experience h3 i {
       font-size: 1.25rem !important; }
     .experience h3 span {
+      font-size: 1.25rem !important; }
+  .education {
+    padding: 9.5rem 0 !important; }
+    .education h1 {
+      font-size: 2rem !important; }
+    .education h3 i {
+      font-size: 1.25rem !important; }
+    .education h3 span {
       font-size: 1.25rem !important; } }
