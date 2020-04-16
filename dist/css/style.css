@@ -691,6 +691,25 @@ body {
     body .education .submit a:hover {
       background: #7f8c8d !important;
       color: #fff !important; }
+  body .developers {
+    padding: 6.5rem 0; }
+    body .developers h1 {
+      color: #1AB6CF;
+      font-weight: 500 !important; }
+    body .developers h3 {
+      color: #444;
+      font-weight: normal; }
+      body .developers h3 i {
+        margin-right: 0.5rem;
+        font-size: 1.5rem; }
+      body .developers h3 span {
+        font-size: 1.6rem;
+        margin-right: .25rem; }
+    body .developers .developer {
+      background: #F4F4F4;
+      border: 1px solid #777;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); }
 
 body[data-color=color1] .home-content a.btn-main {
   background: #e84118 !important; }
