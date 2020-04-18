@@ -213,23 +213,33 @@
 ************************************************************/
 @media screen and (min-width: 1200px) {
   .d-sm-none {
-    display: table-cell !important; } }
+    display: table-cell !important; }
+  .hidden-xs {
+    display: block; } }
 
 @media screen and (max-width: 1199px) {
   .d-sm-none {
-    display: table-cell !important; } }
+    display: table-cell !important; }
+  .hidden-xs {
+    display: block; } }
 
 @media screen and (max-width: 992px) {
   .d-sm-none {
-    display: table-cell !important; } }
+    display: table-cell !important; }
+  .hidden-xs {
+    display: block; } }
 
 @media screen and (max-width: 768px) {
   .d-sm-none {
-    display: none !important; } }
+    display: none !important; }
+  .hidden-xs {
+    display: none; } }
 
 @media screen and (max-width: 500px) {
   .d-sm-none {
-    display: none !important; } }
+    display: none !important; }
+  .hidden-xs {
+    display: none; } }
 
 .btn {
   display: inline-block !important;
@@ -710,10 +720,61 @@ body {
       border: 1px solid #777;
       display: -webkit-box;
       display: -ms-flexbox;
-      display: flex; }
-      @media (max-width: 768px) {
-        body .developers .developer {
-          display: block; } }
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: start;
+          -ms-flex-pack: start;
+              justify-content: start; }
+      body .developers .developer .profile-image {
+        -ms-flex-preferred-size: 20%;
+            flex-basis: 20%;
+        border-radius: 50%;
+        overflow: hidden; }
+        body .developers .developer .profile-image img {
+          width: 100%; }
+      body .developers .developer .profile-content {
+        -ms-flex-item-align: center;
+            align-self: center;
+        padding: 0 2.5rem; }
+        body .developers .developer .profile-content h4 {
+          color: #555;
+          font-size: 2rem;
+          margin-bottom: 1rem; }
+        body .developers .developer .profile-content p {
+          text-transform: capitalize;
+          margin-bottom: 0.5rem; }
+        body .developers .developer .profile-content a {
+          padding: 0.5rem 1rem;
+          text-transform: capitalize; }
+      body .developers .developer .skills {
+        -ms-flex-item-align: center;
+            align-self: center;
+        padding: 1rem;
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%; }
+        body .developers .developer .skills .skills-content {
+          list-style: none;
+          font-size: 1.25rem;
+          color: #1AB6CF;
+          margin-left: 65%; }
+          body .developers .developer .skills .skills-content .skill {
+            font-size: inherit;
+            text-transform: capitalize;
+            margin-bottom: 0.25rem;
+            position: relative;
+            font-weight: normal; }
+            body .developers .developer .skills .skills-content .skill:before {
+              content: "\f00c";
+              font-family: 'Font Awesome 5 free';
+              font-style: normal;
+              font-weight: 600;
+              position: absolute;
+              top: 6px;
+              left: -22px;
+              color: #1AB6CF;
+              font-size: 16px; }
 
 body[data-color=color1] .home-content a.btn-main {
   background: #e84118 !important; }
@@ -764,6 +825,17 @@ body[data-color=color1] .education h1 {
 body[data-color=color1] .education .submit input {
   background: #e84118 !important; }
 
+body[data-color=color1] .developers h1 {
+  color: #e84118; }
+
+body[data-color=color1] .developers .developer .profile-content a {
+  background-color: #e84118 !important; }
+
+body[data-color=color1] .developers .developer .skills .skills-content {
+  color: #e84118; }
+  body[data-color=color1] .developers .developer .skills .skills-content .skill:before {
+    color: #e84118; }
+
 body[data-color=color2] .home-content a.btn-main {
   background: #27ae60 !important; }
 
@@ -813,89 +885,113 @@ body[data-color=color2] .education h1 {
 body[data-color=color2] .education .submit input {
   background: #27ae60 !important; }
 
+body[data-color=color2] .developers h1 {
+  color: #27ae60; }
+
+body[data-color=color2] .developers .developer .profile-content a {
+  background-color: #27ae60 !important; }
+
+body[data-color=color2] .developers .developer .skills .skills-content {
+  color: #27ae60; }
+  body[data-color=color2] .developers .developer .skills .skills-content .skill:before {
+    color: #27ae60; }
+
 @media screen and (max-width: 768px) {
-  nav .navbar {
+  body nav .navbar {
     display: block;
     text-align: center;
     padding: 0.8rem 0 !important; }
-    nav .navbar .logo {
+    body nav .navbar .logo {
       margin-bottom: 15px;
       font-size: 1.5rem; }
-    nav .navbar .nav {
+    body nav .navbar .nav {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center; }
-      nav .navbar .nav .nav-link {
+      body nav .navbar .nav .nav-link {
         font-size: 1rem !important;
         padding: 0 0.5rem !important; }
-  .home-content {
+  body .home-content {
     padding-top: 35vh !important; }
-    .home-content h1 {
+    body .home-content h1 {
       font-size: 2rem !important; }
-    .home-content h3 {
+    body .home-content h3 {
       font-size: 1rem !important; }
-  .color-select i {
+  body .color-select i {
     top: 7rem !important; }
-  .login h1 {
+  body .login h1 {
     font-size: 2rem !important; }
-  .login h3 i {
+  body .login h3 i {
     font-size: 1.25rem; }
-  .login h3 span {
+  body .login h3 span {
     font-size: 1.25rem; }
-  .login p {
+  body .login p {
     font-size: 1rem; }
-  .login a {
+  body .login a {
     font-size: 1rem; }
-  .signup h1 {
+  body .signup h1 {
     font-size: 2rem !important; }
-  .signup h3 i {
+  body .signup h3 i {
     font-size: 1.25rem; }
-  .signup h3 span {
+  body .signup h3 span {
     font-size: 1.25rem; }
-  .signup p {
+  body .signup p {
     font-size: 1rem; }
-  .signup a {
+  body .signup a {
     font-size: 1rem; }
-  .dashboard {
+  body .dashboard {
     padding: 9.5rem 0 !important; }
-    .dashboard h1 {
+    body .dashboard h1 {
       font-size: 2rem !important; }
-    .dashboard h3 i {
+    body .dashboard h3 i {
       font-size: 1.25rem !important; }
-    .dashboard h3 span {
+    body .dashboard h3 span {
       font-size: 1.25rem !important; }
-    .dashboard .profile {
+    body .dashboard .profile {
       display: block !important; }
-      .dashboard .profile a {
+      body .dashboard .profile a {
         display: block !important;
         margin-bottom: .3rem; }
-    .dashboard .exp, .dashboard .edu {
+    body .dashboard .exp, body .dashboard .edu {
       text-align: center; }
-      .dashboard .exp table, .dashboard .edu table {
+      body .dashboard .exp table, body .dashboard .edu table {
         margin: auto; }
-    .dashboard .delete {
+    body .dashboard .delete {
       text-align: center; }
-  .edit-profile {
+  body .edit-profile {
     padding: 9.5rem 0 !important; }
-    .edit-profile h1 {
+    body .edit-profile h1 {
       font-size: 2rem !important; }
-    .edit-profile h3 i {
+    body .edit-profile h3 i {
       font-size: 1.25rem !important; }
-    .edit-profile h3 span {
+    body .edit-profile h3 span {
       font-size: 1.25rem !important; }
-  .experience {
+  body .experience {
     padding: 9.5rem 0 !important; }
-    .experience h1 {
+    body .experience h1 {
       font-size: 2rem !important; }
-    .experience h3 i {
+    body .experience h3 i {
       font-size: 1.25rem !important; }
-    .experience h3 span {
+    body .experience h3 span {
       font-size: 1.25rem !important; }
-  .education {
+  body .education {
     padding: 9.5rem 0 !important; }
-    .education h1 {
+    body .education h1 {
       font-size: 2rem !important; }
-    .education h3 i {
+    body .education h3 i {
       font-size: 1.25rem !important; }
-    .education h3 span {
-      font-size: 1.25rem !important; } }
+    body .education h3 span {
+      font-size: 1.25rem !important; }
+  body .developers {
+    padding: 9.5rem 0 !important; }
+    body .developers h1 {
+      font-size: 2rem !important; }
+    body .developers h3 i {
+      font-size: 1.25rem !important; }
+    body .developers h3 span {
+      font-size: 1.25rem !important; }
+    body .developers .developer {
+      display: block; }
+      body .developers .developer .profile-content {
+        text-align: center;
+        margin-top: 1.5rem; } }
