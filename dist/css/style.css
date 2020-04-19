@@ -70,6 +70,29 @@
   font-size: 5rem !important;
   font-weight: normal !important; }
 
+.lead {
+  font-size: 1.25rem;
+  color: #eee;
+  font-weight: 500; }
+
+.line {
+  margin: 2rem 0 2rem;
+  border: none;
+  border-top: 1px solid #b7b7b7; }
+
+.check {
+  position: relative; }
+  .check:before {
+    content: "\f00c";
+    font-family: 'Font Awesome 5 free';
+    font-style: normal;
+    font-weight: 600;
+    position: absolute;
+    top: 6px;
+    left: -22px;
+    color: #1AB6CF;
+    font-size: 16px; }
+
 .m-auto {
   margin: auto !important; }
 
@@ -717,7 +740,7 @@ body {
         margin-right: .25rem; }
     body .developers .developer {
       background: #F4F4F4;
-      border: 1px solid #777;
+      border: 1px solid #e0e0e0;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -726,7 +749,7 @@ body {
               align-items: center;
       -webkit-box-pack: start;
           -ms-flex-pack: start;
-              justify-content: start; }
+              justify-content: flex-start; }
       body .developers .developer .profile-image {
         -ms-flex-preferred-size: 20%;
             flex-basis: 20%;
@@ -763,18 +786,61 @@ body {
             font-size: inherit;
             text-transform: capitalize;
             margin-bottom: 0.25rem;
-            position: relative;
             font-weight: normal; }
-            body .developers .developer .skills .skills-content .skill:before {
-              content: "\f00c";
-              font-family: 'Font Awesome 5 free';
-              font-style: normal;
-              font-weight: 600;
-              position: absolute;
-              top: 6px;
-              left: -22px;
-              color: #1AB6CF;
-              font-size: 16px; }
+  body .developer-profile {
+    padding: 6.5rem 0; }
+    body .developer-profile a {
+      padding: 0.75rem 2.5rem !important;
+      background: #f4f4f4 !important;
+      color: #333 !important;
+      -webkit-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+      body .developer-profile a:hover {
+        background: #7f8c8d !important;
+        color: #fff !important; }
+    body .developer-profile .profile-grid .profile-main {
+      padding: 3rem 0;
+      background: #1AB6CF;
+      color: #fff; }
+      body .developer-profile .profile-grid .profile-main .profile-image {
+        display: inline-block;
+        width: 250px;
+        border-radius: 50%;
+        overflow: hidden; }
+        body .developer-profile .profile-grid .profile-main .profile-image img {
+          width: 100%;
+          display: block; }
+      body .developer-profile .profile-grid .profile-main .profile-content h2 {
+        font-weight: 600 !important;
+        letter-spacing: 2px; }
+      body .developer-profile .profile-grid .profile-main .profile-content .social-icons i {
+        font-size: 2rem;
+        display: inline-block;
+        margin-right: 0.5rem;
+        cursor: pointer; }
+        body .developer-profile .profile-grid .profile-main .profile-content .social-icons i:last-child {
+          margin-right: 0; }
+        body .developer-profile .profile-grid .profile-main .profile-content .social-icons i:hover {
+          color: #484E53; }
+    body .developer-profile .profile-grid .profile-about {
+      background: #f4f4f4;
+      border: 1px solid #e0e0e0;
+      padding: 3rem 2rem; }
+      body .developer-profile .profile-grid .profile-about h3 {
+        color: #1AB6CF;
+        font-size: 1.5rem;
+        font-weight: 500; }
+      body .developer-profile .profile-grid .profile-about p {
+        color: #666;
+        line-height: 20px; }
+      body .developer-profile .profile-grid .profile-about .skills {
+        list-style: none; }
+        body .developer-profile .profile-grid .profile-about .skills .skill {
+          display: inline-block;
+          margin-right: 2.5rem;
+          font-size: 1.25rem; }
+          body .developer-profile .profile-grid .profile-about .skills .skill:last-child {
+            margin-right: 0; }
 
 body[data-color=color1] .home-content a.btn-main {
   background: #e84118 !important; }
