@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+    <title>Welcome to DevCOnnector</title>
+</head>
+<body id="posts" data-color="default">
+    <!-- Start color select -->
+    <aside class="color-select text-center hide">
+        <i class="fas fa-cog fa-2x"></i>
+        <ul class="list text-capitalize">
+            <li class="color-item" data-color='default' data-col="#1AB6CF"></li>
+            <li class="color-item" data-color='color1' data-col="#2980b9"></li>
+            <li class="color-item" data-color='color2' data-col="#27ae60"></li>
+        </ul>
+    </aside>
+    <!-- End color select -->
+
+    <!-- start navbar section -->
+    <nav>
+        <div class="container-fluid navbar">
+            <div class="logo">
+                <a href="dashboard.html"><i class="fas fa-code"></i><span>Dev</span><span>Connector</span></a>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="developer.html" class="nav-link">developer</a>
+                </li>
+                <li class="nav-item">
+                    <a href="posts.html" class="nav-link">posts</a>
+                </li>
+                <li class="nav-item">
+                    <a href="dashboard.html" class="nav-link"><i class="fas fa-user"></i>dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="login.html" class="nav-link"><i class="fas fa-sign-out-alt"></i>logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- end navbr section -->
+
+    <!-- start posts section -->
+    <div class="posts">
+        <div class="container">
+            <h1 class="text-capitalize display-2 mb-2">posts</h1>
+            <h3 class="text-capitalize mb-1">
+                <i class="fas fa-user"></i>
+                <span>
+                    welcome to the community
+                </span>
+            </h3>
+            <!-- alert section -->
+            <div class="alert alert-main">
+                <p class="text-capitalize">say something ...</p>
+            </div>
+            <!-- post section -->
+            <form action="" class="mb-2 mt-1 form-post">
+                <!-- input field -->
+                <div class="input-fields mb-1">
+                    <textarea name="post" cols="30" rows="7" class="form-control" placeholder="create post"></textarea>
+                </div>
+                <!-- submit section -->
+                <input type="submit" class="btn btn-black" value="submit">
+            </form>
+            <!-- post section 1 -->
+            <div class="post mb-1">
+                <div class="image-profile">
+                    <div class="image">
+                        <img class="rounded" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="image-profile">
+                    </div>
+                    <div class="name-profile text-center">
+                        <span>Mgamal</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure exercitationem dicta aperiam necessitatibus tempora corrupti, beatae eos expedita minima quod odio ut dignissimos illum cumque atque magni eveniet itaque nesciunt!</p>
+                    <div class="interact d-flex justify-content-start">
+                        <i class="fas fa-thumbs-up align-self-center">4</i>
+                        <i class="fas fa-thumbs-down align-self-center"></i>
+                        <a href="#" class="btn btn-main align-self-center">discussion</a>
+                    </div>
+                </div>
+            </div>
+            <!-- section post 2 -->
+            <div class="post">
+                <div class="image-profile">
+                    <div class="image">
+                        <img class="rounded" src="https://www.gravatar.com/avatar/205e460b479e2e5b48aec07710c08d50?s=200" alt="image-profile">
+                    </div>
+                    <div class="name-profile text-center">
+                        <span>Mgamal</span>
+                    </div>
+                </div>
+                <div class="post-content">
+                    <p class="mb-1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure exercitationem dicta aperiam necessitatibus tempora corrupti, beatae eos expedita minima quod odio ut dignissimos illum cumque atque magni eveniet itaque nesciunt!</p>
+                    <div class="interact d-flex justify-content-start">
+                        <i class="fas fa-thumbs-up align-self-center">4</i>
+                        <i class="fas fa-thumbs-down align-self-center"></i>
+                        <a href="#" class="btn btn-main align-self-center">discussion</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end posts section -->
+</body>
+</html>

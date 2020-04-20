@@ -107,6 +107,26 @@
     left: -22px;
     font-size: 16px; }
 
+/*********************************************
+** Alert Classes
+***********************************************/
+.alert {
+  padding: 0.75rem 1rem; }
+
+.alert-main {
+  background: #1AB6CF;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.25rem; }
+
+/**********************************
+** Image Classes
+***********************************/
+.rounded {
+  display: block;
+  border-radius: 50%;
+  width: 100%; }
+
 .m-auto {
   margin: auto !important; }
 
@@ -288,7 +308,8 @@
   outline: none;
   border: none;
   cursor: pointer;
-  font-weight: 500; }
+  font-weight: 500;
+  text-transform: capitalize; }
 
 .btn-main {
   background-color: #1AB6CF !important;
@@ -306,6 +327,10 @@
 .btn-ligth {
   background-color: #f4f4f4 !important;
   color: #000 !important; }
+
+.btn-black {
+  background-color: #000 !important;
+  color: #fff !important; }
 
 .btn-2x {
   font-size: 2rem;
@@ -924,6 +949,60 @@ body {
             body .developer-profile .profile-grid .profile-github .github-repo .github-badges .fork {
               background: #f4f4f4;
               color: #000; }
+  body .posts {
+    padding: 6.5rem 0; }
+    body .posts h1 {
+      color: #1AB6CF;
+      font-weight: 500 !important; }
+    body .posts h3 {
+      color: #444;
+      font-weight: normal; }
+      body .posts h3 i {
+        margin-right: 0.5rem;
+        font-size: 1.5rem; }
+      body .posts h3 span {
+        font-size: 1.6rem;
+        margin-right: .25rem; }
+    body .posts .form-post [type=submit] {
+      padding: 0.75rem 2rem;
+      opacity: 0.8;
+      font-size: 1rem;
+      font-weight: 300 !important; }
+      body .posts .form-post [type=submit]:hover {
+        opacity: 1; }
+    body .posts .post {
+      border: 1px solid #ccc;
+      padding: 0.5rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 4fr;
+      grid-template-areas: 'profile content'; }
+      body .posts .post .image-profile {
+        grid-area: profile;
+        padding: 1rem; }
+        body .posts .post .image-profile .name-profile {
+          padding: 0.5rem; }
+          body .posts .post .image-profile .name-profile span {
+            color: #1AB6CF;
+            font-weight: 600;
+            font-size: 1.25rem;
+            letter-spacing: 1px; }
+      body .posts .post .post-content {
+        grid-area: content;
+        padding: 1rem;
+        align-self: center; }
+        body .posts .post .post-content p {
+          line-height: 1.6; }
+        body .posts .post .post-content .interact i {
+          color: #444;
+          margin-right: 0.5rem;
+          display: inline-block;
+          padding: 0.7rem 1.5rem;
+          background: #f4f4f4;
+          cursor: pointer; }
+          body .posts .post .post-content .interact i.fa-thumbs-up:before {
+            margin-right: 0.2rem; }
+        body .posts .post .post-content .interact a {
+          padding: 0.75rem 1.5rem; }
 
 body[data-color=color1] .home-content a.btn-main {
   background: #e84118 !important; }
@@ -1006,6 +1085,15 @@ body[data-color=color1] .developer-profile .profile-github h3 {
 body[data-color=color1] .developer-profile .profile-github .github-repo h4 {
   color: #e84118; }
 
+body[data-color=color1] .posts h1 {
+  color: #e84118; }
+
+body[data-color=color1] .posts .post .image-profile .name-profile span {
+  color: #e84118; }
+
+body[data-color=color1] .posts .post .post-content .interact a {
+  background: #e84118 !important; }
+
 body[data-color=color2] .home-content a.btn-main {
   background: #27ae60 !important; }
 
@@ -1086,6 +1174,15 @@ body[data-color=color2] .developer-profile .profile-github h3 {
 
 body[data-color=color2] .developer-profile .profile-github .github-repo h4 {
   color: #27ae60; }
+
+body[data-color=color2] .posts h1 {
+  color: #27ae60; }
+
+body[data-color=color2] .posts .post .image-profile .name-profile span {
+  color: #27ae60; }
+
+body[data-color=color2] .posts .post .post-content .interact a {
+  background: #27ae60 !important; }
 
 @media screen and (max-width: 768px) {
   body nav .navbar {
@@ -1193,4 +1290,17 @@ body[data-color=color2] .developer-profile .profile-github .github-repo h4 {
     body .developer-profile .profile-about .skills .skill {
       display: block !important;
       margin-right: 0;
-      margin-bottom: 1rem; } }
+      margin-bottom: 1rem; }
+  body .posts {
+    padding: 9.5rem 0 !important; }
+    body .posts h1 {
+      font-size: 2rem !important; }
+    body .posts h3 i {
+      font-size: 1.25rem !important; }
+    body .posts h3 span {
+      font-size: 1.25rem !important; }
+    body .posts .post {
+      grid-template-columns: 1fr;
+      grid-template-areas: 'profile profile' 'content content'; }
+      body .posts .post .post-content {
+        padding: 0; } }
